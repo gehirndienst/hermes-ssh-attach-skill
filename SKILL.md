@@ -1,6 +1,6 @@
 ---
 name: ssh-attach
-description: "Attach Hermes to a remote machine via SSH. Give an SSH command and it handles everything: tests connection, detects auth method, prompts for password, installs sshpass if needed, creates isolated profile, and configures it. Usage: /skill ssh-attach then provide 'ssh user@host' or just say 'connect to ssh user@host'."
+description: "Attach Hermes to a remote machine over SSH, end to end. Trigger by giving an SSH command ('ssh user@host', 'ssh -p 2222 user@host', 'ssh -i key root@ip'), a bare host or ~/.ssh/config alias ('ssh to machine1'), or natural language ('connect to X', 'attach to X', 'work on X'). The skill discovers and tests SSH keys, falls back to password auth (installs sshpass if needed), creates an isolated profile, inherits your model/provider config, plants a remote-aware MEMORY.md, and hands you the launch command. Usage: /skill ssh-attach then name the host"
 version: 1.0.0
 ---
 
