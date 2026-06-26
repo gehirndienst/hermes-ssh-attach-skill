@@ -1,6 +1,6 @@
-# ssh-attach
+# hermes-ssh-attach-skill
 
-A skill for the Hermes agent that attaches your agent to a remote machine over SSH - end to end. Formulate your intent in natural language mentioning the host (or alias from the ssh config), user, and working directory, and the skill handles the rest: key discovery, password prompting, hermes profile creation and configuration.
+A skill for the [Hermes agent](https://hermes-agent.nousresearch.com/) that attaches your agent to a remote machine over SSH - end to end. Formulate your intent in natural language mentioning the host (or alias from the ssh config), user, and working directory, and the skill handles the rest: key discovery, password prompting, hermes profile creation and configuration.
 
 ## Which problem does it solve
 
@@ -23,7 +23,7 @@ With this skill: You say "connect to my_machine.com using myuser" and it does ev
 Clone into your Hermes skills directory like so:
 
 ```bash
-git clone https://github.com/gehirndienst/ssh-attach-skill.git ~/.hermes/skills/software-development/ssh-attach
+git clone https://github.com/gehirndienst/hermes-ssh-attach-skill.git ~/.hermes/skills/software-development/ssh-attach
 ```
 
 Hermes discovers the skill on next session start
